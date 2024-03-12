@@ -1,8 +1,3 @@
-using Entities;
-using RepositoryContracts;
-using ServiceContracts;
-using Services;
-using StocksApp.Options;
 using Serilog;
 using StocksApp.Middleware;
 using StocksApp.StartupExtensions;
@@ -11,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog();
 
-if (builder.Environment.IsDevelopment())
+if (builder.Environment.IsDevelopment() || builder.Environment.IsEnvironment("Test"))
 {
-    builder.Configuration.AddUserSecrets<Repositories.FinnhubRepository>();
+    builder.Configuration.AddUserSecrets<Program>();
 }
 
 builder.Services.ConfigureServices(builder.Configuration);

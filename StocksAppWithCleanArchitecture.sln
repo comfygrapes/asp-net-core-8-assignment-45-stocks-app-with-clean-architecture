@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.UI", "StocksApp.UI\StocksApp.UI.csproj", "{84B1E7EC-F47A-41F5-B424-0CB44B7AD580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksApp.UI", "StocksApp.UI\StocksApp.UI.csproj", "{84B1E7EC-F47A-41F5-B424-0CB44B7AD580}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70668499-FDFE-4EAD-BD8E-DE57ED5E9307}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3545FB48-A1A0-43F6-A5EC-0F1427A36830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Core", "StocksApp.Core\StocksApp.Core.csproj", "{E6673D6E-F61D-4C78-AA76-199DD54D1F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksApp.Core", "StocksApp.Core\StocksApp.Core.csproj", "{E6673D6E-F61D-4C78-AA76-199DD54D1F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Infrastructure", "StocksApp.Infrastructure\StocksApp.Infrastructure.csproj", "{2C9A4C69-8E8C-4F69-A0D4-358E4F283804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksApp.Infrastructure", "StocksApp.Infrastructure\StocksApp.Infrastructure.csproj", "{2C9A4C69-8E8C-4F69-A0D4-358E4F283804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.ServiceTests", "StocksApp.ServiceTests\StocksApp.ServiceTests.csproj", "{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.ControllerTests", "StocksApp.ControllerTests\StocksApp.ControllerTests.csproj", "{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.IntegrationTests", "StocksApp.IntegrationTests\StocksApp.IntegrationTests.csproj", "{3C873FA5-7E73-48A7-8581-A7EFB7135C19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,18 @@ Global
 		{2C9A4C69-8E8C-4F69-A0D4-358E4F283804}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C9A4C69-8E8C-4F69-A0D4-358E4F283804}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C9A4C69-8E8C-4F69-A0D4-358E4F283804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C873FA5-7E73-48A7-8581-A7EFB7135C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C873FA5-7E73-48A7-8581-A7EFB7135C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C873FA5-7E73-48A7-8581-A7EFB7135C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C873FA5-7E73-48A7-8581-A7EFB7135C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +57,9 @@ Global
 		{84B1E7EC-F47A-41F5-B424-0CB44B7AD580} = {70668499-FDFE-4EAD-BD8E-DE57ED5E9307}
 		{E6673D6E-F61D-4C78-AA76-199DD54D1F46} = {70668499-FDFE-4EAD-BD8E-DE57ED5E9307}
 		{2C9A4C69-8E8C-4F69-A0D4-358E4F283804} = {70668499-FDFE-4EAD-BD8E-DE57ED5E9307}
+		{A1D58C55-B67C-4BC7-8B5C-9793EB0CFC2E} = {3545FB48-A1A0-43F6-A5EC-0F1427A36830}
+		{C952E3E7-7FCE-45F4-80A2-B28F8D0ACBF7} = {3545FB48-A1A0-43F6-A5EC-0F1427A36830}
+		{3C873FA5-7E73-48A7-8581-A7EFB7135C19} = {3545FB48-A1A0-43F6-A5EC-0F1427A36830}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {300731BD-E248-4136-8030-2DE6B1A098A2}

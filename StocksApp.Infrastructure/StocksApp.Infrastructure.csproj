@@ -21,4 +21,8 @@
     <ProjectReference Include="..\StocksApp.Core\StocksApp.Core.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="StocksApp.IntegrationTests" />
+	</ItemGroup>
+
 </Project>

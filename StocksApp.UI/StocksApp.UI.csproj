@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -19,5 +19,9 @@
     <ProjectReference Include="..\StocksApp.Core\StocksApp.Core.csproj" />
     <ProjectReference Include="..\StocksApp.Infrastructure\StocksApp.Infrastructure.csproj" />
   </ItemGroup>
+
+    <ItemGroup>
+		<InternalsVisibleTo Include="StocksApp.IntegrationTests" />
+	</ItemGroup>
 
 </Project>
